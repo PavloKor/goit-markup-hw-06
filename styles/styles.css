@@ -718,6 +718,7 @@ ul {
   transition: opacity var(--perehid), visibility var(--perehid);
 }
 .modal {
+  padding: 20px;
   /*техніка центрування абсолютно позиційованих елементів */
   position: absolute;
   top: 50%;
@@ -748,4 +749,25 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   cursor: pointer;
+}
+.input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.regidter-form {
+}
+.reg-form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.reg-form-group {
+}
+label {
+  display: block;
 }
