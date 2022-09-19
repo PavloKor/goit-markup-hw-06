@@ -566,54 +566,78 @@
             <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
-
         <!--Форма реестрації-->
-
-        <form class="register-form" name="register-form" autocomplete="on" novalidate>
-          <strong class="reg-form-title">Залиште свої дані, ми вам передзвонимо</strong>
-          <div class="reg-form-group">
-            <label>
-              <span>Імʼя</span>
-              <input type="text" name="user-name" />
-              <svg width="18" height="18">
-                <use href=""></use>
+        <form class="form register-form" name="register-form" autocomplete="on" novalidate>
+          <div>
+          <!--Заголовок-->
+          <h2 class="reg-form-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <!--Імʼя-->
+          <div class="reg-group">
+            <label class="reg-label" for="name">Ім'я</label>
+            <div class="reg-txt-group">
+              <input class="reg-input" type="text" name="user-name" id="name" />
+              <svg class="reg-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
-            </label>
-            <label>
-              <span>Телефон</span>
-              <input type="text" name="user-phone" />
-              <svg width="18" height="18">
-                <use href=""></use>
-              </svg>
-            </label>
-            <label>
-              <span>Пошта</span>
-              <input type="email" name="user-mail" />
-              <svg width="18" height="18">
-                <use href=""></use>
-              </svg>
-            </label>
-            <label for="">
-              Коментар
-              <textarea name="comment" id="" rows="5" placeholder="Введіть текст"></textarea>
-            </label>
+            </div>
           </div>
-          <!--Погодження-->
-          <label for="">
-            <input type="checkbox" />
-            <span>
+          <!--Телефон-->
+          <div class="reg-group">
+            <label class="reg-label" for="tel">Телефон</label>
+            <div class="reg-txt-group">
+              <input class="reg-input" type="tel" name="tel" id="tel" />
+              <svg class="reg-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <!--Пошта-->
+          <div class="reg-group">
+            <label class="reg-label" for="mail">Пошта</label>
+            <div class="reg-txt-group">
+              <input class="reg-input" type="email" name="mail" id="mail" />
+              <svg class="reg-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <!--Коментар-->
+          <div class="reg-group">
+            <label class="reg-label" for="comment">Коментар</label>
+            <textarea
+              class="hint"
+              name="comment"
+              id="comment"
+              rows="10"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <!--Чекбокс-->
+          <div class="reg-chek">
+            <input type="checkbox" name="" value="" id="chek" />
+            <label for="chek">
               Погоджуюся з розсилкою та приймаю
               <a href="">Умови договору</a>
-            </span>
-          </label>
-
+            </label>
+          </div>
           <!--Кнопка-->
-          <button class="btn" type="submit">Відправити</button>
+          <button class="reg-btn btn" type="submit">Відправити</button>
         </form>
       </div>
 
       <!--JS Scripte-->
       <script src="./js/modal.js"></script>
+      <!--Скрипт для зручності-->
+      <script>
+        (() => {
+          document.querySelector('.register-form').addEventListener('submit', e => {
+            e.preventDefault();
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+          });
+        })();
+      </script>
     </div>
   </body>
 </html>

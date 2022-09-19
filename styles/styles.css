@@ -750,14 +750,13 @@ ul {
   border-radius: 50px;
   cursor: pointer;
 }
-.input::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+.form {
 }
-.regidter-form {
+.register-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 40px;
 }
 .reg-form-title {
   font-weight: 700;
@@ -765,9 +764,57 @@ ul {
   line-height: calc(23 / 20);
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 15px;
 }
-.reg-form-group {
+.reg-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--text-cl);
 }
-label {
-  display: block;
+.reg-txt-group {
+  position: relative;
+}
+.hint,
+.reg-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.reg-group {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.reg-group input {
+  width: 100%;
+  margin: 0%;
+  padding: 11px 12px;
+}
+.reg-group label {
+  margin-bottom: 4px;
+}
+.reg-icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+.hint {
+  padding: 12px 16px;
+}
+.hint::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+textarea {
+  resize: none;
+}
+.reg-chek {
+  margin-top: 17px;
+  margin-bottom: 30px;
 }
