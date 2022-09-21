@@ -781,6 +781,9 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   cursor: pointer;
+  transition: color var(--perehid);
+}
+.close-icon {
 }
 .modal-btn:focus .close-icon,
 .modal-btn:hover .close-icon {
@@ -808,6 +811,7 @@ ul {
 }
 .reg-txt-group {
   position: relative;
+  transition: color var(--perehid);
 }
 .reg-txt-group:focus,
 .reg-txt-group:hover {
