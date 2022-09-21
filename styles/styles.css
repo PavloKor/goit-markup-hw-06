@@ -759,7 +759,7 @@ ul {
   /*End*/
 
   width: 528px;
-  height: 581px;
+  /* height: 581px; */
   background-color: var(--main-bcg-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -859,11 +859,13 @@ textarea {
 }
 .reg-chek {
   margin-top: 17px;
-  margin-bottom: 30px;
 }
 .chekbox {
   text-align: center;
 }
 .reg-chek:last-child {
   text-align: center;
+}
+.chek-link {
+  color: var(--accent-txt-cl);
 }
