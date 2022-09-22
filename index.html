@@ -581,68 +581,62 @@
           </svg>
         </button>
         <!--Форма реестрації-->
+        
         <form class="form register-form" name="register-form" autocomplete="on" novalidate>
           <!--Заголовок-->
           <strong class="reg-form-title">Залиште свої дані, ми вам передзвонимо</strong>
-          <!--Імʼя-->
-          <div class="reg-group">
-            <label class="reg-label" for="name">Ім'я</label>
-            <div class="reg-txt-group">
-              <input class="reg-input" type="text" name="user-name" id="name" />
-              <svg class="reg-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+          <!--Дані користувача-->
+          <div class="reg-form-group">
+
+
+            <label class="reg-form-field" name="name">
+              <span class="reg-form-label">Ім'я</span>
+              <input class="reg-form-input" name="name" type="text">
+              <svg class="reg-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-form"></use>
               </svg>
-            </div>
-          </div>
-          <!--Телефон-->
-          <div class="reg-group">
-            <label class="reg-label" for="tel">Телефон</label>
-            <div class="reg-txt-group">
-              <input class="reg-input" type="tel" name="tel" id="tel" />
-              <svg class="reg-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+            </label>
+
+
+            <label class="reg-form-field" name="phone">
+              <span class="reg-form-label">Телефон</span>
+              <input class="reg-form-input" name="phone" type="tel">
+              <svg class="reg-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-form"></use>
               </svg>
-            </div>
-          </div>
-          <!--Пошта-->
-          <div class="reg-group">
-            <label class="reg-label" for="mail">Пошта</label>
-            <div class="reg-txt-group">
-              <input class="reg-input" type="email" name="mail" id="mail" />
-              <svg class="reg-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+            </label>
+
+
+            <label class="reg-form-field" name="mail">
+              <span class="reg-form-label">Пошта</span>
+              <input class="reg-form-input" name="mail" type="email">
+              <svg class="reg-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-form"></use>
               </svg>
-            </div>
-          </div>
-          <!--Коментар-->
-          <div class="reg-group">
-            <label class="reg-label" for="comment">Коментар</label>
-            <textarea
-              class="hint reg-txt-group"
-              name="comment"
-              id="comment"
-              rows="10"
-              placeholder="Введіть текст"
-            ></textarea>
-          </div>
-          <!--Чекбокс-->
-          <div class="reg-chek chekbox">
-            <input type="checkbox" name="" value="" id="chek" />
-            <label for="chek">
-              <svg class="icon-chek" width="16" height="15" >
-                <use class="icon-cheked" href="./images/icons.svg#icon-checked"></use>
-                <use class="icon-uncheked" href="./images/icons.svg#icon-unchecked"></use>
-              </svg>
-              <span>Погоджуюся з розсилкою та приймаю</span>
-              <a class="chek-link" href="">Умови договору</a>
+            </label>
+
+
+            <label class="reg-form-field" name="comment">
+              <span class="reg-form-label">Коментар</span>
+              <textarea class="comment" name="comment" rows="10" placeholder="Введіть текст"></textarea>
             </label>
           </div>
-          <!--Кнопка-->
-          <div class="reg-chek">
-            <button class="reg-btn btn" type="submit">
-              Відправити
-            </button>
-          </div>
+
+          <!--Умови-->
+          <label class="reg-form-agreement" name="chek">
+            <input class="reg-form-checkbox visually-hidden" type="checkbox">
+            <svg class="reg-form-icons" width="16" height="15">
+              <use class="icon-check" href="./images/icons.svg#icon-check"></use>
+              <use class="icon-uncheck" href="./images/icons.svg#icon-uncheck"></use>
+            </svg>
+            <span class="reg-form-desc">
+              Погоджуюся з розсилкою та приймаю
+              <a class="reg-form-link" href="">
+                Умови договору
+              </a>
+            </span>
+          </label>
+          <button class="btn reg-btn" type="submit">Відправити</button>
         </form>
       </div>
 
