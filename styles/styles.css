@@ -789,6 +789,9 @@ ul {
 .modal-btn:hover .close-icon {
   fill: var(--accent-txt-cl);
 }
+input {
+  outline: transparent;
+}
 .form {
 }
 .register-form {
@@ -823,6 +826,10 @@ ul {
 .reg-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+.reg-input {
+  padding-left: 36px;
+  padding-right: 36px;
 }
 .reg-group {
   display: flex;
