@@ -797,10 +797,11 @@ input {
 .register-form {
 }
 .reg-form-title {
+  display: block;
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
-  text-align: center;
   letter-spacing: 0.03em;
 
   margin-bottom: 15px;
@@ -828,8 +829,6 @@ input {
   border-radius: 4px;
 }
 .reg-input {
-  padding-left: 36px;
-  padding-right: 36px;
 }
 .reg-group {
   display: flex;
@@ -840,7 +839,7 @@ input {
 .reg-group input {
   width: 100%;
   margin: 0%;
-  padding: 11px 12px;
+  padding: 11px 36px;
 }
 .reg-group label {
   margin-bottom: 4px;
@@ -863,6 +862,7 @@ input {
 }
 textarea {
   resize: none;
+  outline: none;
 }
 .reg-chek {
   margin-top: 17px;
