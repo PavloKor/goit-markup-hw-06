@@ -670,7 +670,7 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-icons {
-  margin-right: 93px;
+  margin-right: auto;
 }
 .footer-title {
   font-weight: 700;
@@ -706,7 +706,7 @@ ul {
 }
 .footer-form {
   width: 570px;
-  height: 50px;
+  
 }
 .footer-title {
   margin-bottom: 20px;
@@ -722,7 +722,7 @@ ul {
   font-size: 16px;
   line-height: calc(20 / 16);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
   border-radius: 4px;
 }
 .footer-btn {
@@ -827,10 +827,11 @@ textarea {
 .reg-form-group {
   margin-bottom: 20px;
 }
+
 .reg-form-field {
   display: block;
   position: relative;
-  transition: fill var(--perehid);
+  
 }
 .reg-form-field:not(:last-child) {
   margin-bottom: 10px;
@@ -846,6 +847,7 @@ textarea {
 
   margin-bottom: 4px;
 }
+
 .reg-form-input {
   width: 100%;
   height: 40px;
@@ -857,12 +859,12 @@ textarea {
   transition: border-color var(--perehid);
   cursor: pointer;
 }
-.reg-form-field:focus .reg-form-icon,
-.reg-form-field:hover .reg-form-icon,
-.reg-form-field:focus .reg-form-input,
-.reg-form-field:hover .reg-form-input {
-  fill: var(--btn-bcg-cl);
-  border-color: var(--btn-bcg-cl);
+.reg-form-input:hover,
+.reg-form-input:focus,
+.reg-form-input:hover + .reg-form-icon,
+.reg-form-input:focus + .reg-form-icon {
+  border-color: var(--accent-txt-cl);
+  fill: var(--accent-txt-cl);
 }
 
 .reg-form-icon {
@@ -873,6 +875,7 @@ textarea {
 }
 .comment {
   width: 100%;
+  height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
